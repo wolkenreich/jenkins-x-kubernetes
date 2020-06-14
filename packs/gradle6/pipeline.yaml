@@ -21,10 +21,6 @@ pipelines:
           name: jx-preview
 
   release:
-    setVersion:
-      steps:
-      - sh: jx step next-version --use-git-tag-only --tag
-        name: tag-with-new-version
     build:
       steps:
       - sh: export VERSION=`cat VERSION` && skaffold build -f skaffold.yaml

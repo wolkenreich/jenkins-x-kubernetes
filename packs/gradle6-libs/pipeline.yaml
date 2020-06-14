@@ -1,0 +1,3 @@
+extends:
+  import: classic
+  file: gradle6/pipeline.yaml
